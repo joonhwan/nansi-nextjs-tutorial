@@ -29,7 +29,7 @@ const Home = () => {
           est reprehenderit ipsum velit. Eiusmod ex enim commodo amet tempor
           anim amet sunt et.
         </p>
-        <Link href="/list">
+        <Link href="/friends">
           <a className={styles.btn}>난시목록 보기</a>
         </Link>
       </div>
