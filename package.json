@@ -1,0 +1,8 @@
+{
+  "name": "net-ninja-nextjs-tutorial",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT"
+}
