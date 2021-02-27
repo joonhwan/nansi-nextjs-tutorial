@@ -1,0 +1,18 @@
+.single {
+    display: block;
+    background-color: white;
+    margin: 10px 20px;
+    padding: 10px;
+    border-left: 10px solid rgba(255, 0, 0, 0);
+    text-decoration: none;
+    color: #4d3939;
+    border-radius: 5px;
+}
+
+.single:hover {
+    border-left: 10px solid rgba(100, 100, 255, 125);
+}
+
+.detail {
+    text-align:center
+}

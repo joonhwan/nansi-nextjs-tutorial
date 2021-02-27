@@ -1,65 +1,40 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from "next/link";
+import Head from "next/head";
+import styles from "./index.module.css";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>난시난시 홈</title>
+        <meta name="description" content="난시난시의 홈입니다." />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+      <div className="content">
+        <h1 className={styles.title}>난시난시 홈페이지</h1>
+        <p className={styles.text}>
+          Enim voluptate non esse ipsum amet laborum cillum veniam dolor sunt
+          labore dolore aliqua. Aute ipsum dolore incididunt ipsum deserunt
+          consequat qui ex aliquip. Sit pariatur nostrud occaecat est consequat
+          quis nulla ad do ut eu. Quis labore irure consequat labore proident
+          anim non dolor deserunt aute nulla aliqua qui. Dolor non quis veniam
+          nulla Lorem. Aliqua anim non labore nisi eiusmod est ullamco
+          consectetur ipsum velit dolore ipsum esse amet. Cupidatat ut consequat
+          amet ut ut enim
         </p>
+        <p>
+          pariatur exercitation voluptate dolor id laboris labore cillum culpa.
+          Est ullamco amet tempor laborum consectetur adipisicing nulla mollit
+          in incididunt sint eu. Pariatur qui deserunt commodo dolore enim
+          consequat nostrud velit ea fugiat tempor non. Dolore voluptate in elit
+          est reprehenderit ipsum velit. Eiusmod ex enim commodo amet tempor
+          anim amet sunt et.
+        </p>
+        <Link href="/list">
+          <a className={styles.btn}>난시목록 보기</a>
+        </Link>
+      </div>
+    </>
+  );
+};
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+export default Home;

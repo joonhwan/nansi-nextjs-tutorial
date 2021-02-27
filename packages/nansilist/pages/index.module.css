@@ -1,0 +1,19 @@
+
+.title {
+}
+
+.text {
+}
+
+.btn {
+  display: block;
+
+  text-decoration: none;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: #58f;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
